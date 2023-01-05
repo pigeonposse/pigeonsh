@@ -50,27 +50,32 @@ Can be used with ```.sh```, ```.js```, and ```.py``` files
 
 ## 🔑 Installation
 
-### Using NPM
+### ⚡️ Using NPM
 
 ```bash
 npm install -g @pigeon-posse/pigeonsh
 ```
 
+### ☢️ With the executable _(not recommended)_
+
+1. Clone the repository and go to the dist folder.
+2. Copy the executable corresponding to your operating system in your ```bin``` folder
+
 ## ⚙️ Usage
 
 ### Write scripts
 
-You can write your scripts in your ```{user}/.scriptsrc``` folder. The structure for the script to work must be:
+You can write your scripts in your ```${USER}/.scriptsrc``` folder. The structure for the script to work must be:
 
 ```bash
-- ${user}/.scriptsrc
+- ${USER}/.scriptsrc
 	- 📂 [script-name] 
 		- 📝 main.[sh, js, py]
 		- 📜 info.[yml, yaml, json] # not required
 ```
 
 <details><summary>ℹ️ Explanation</summary>
-	
+
 <br>
 <li> 
 	<code>[script-name]</code>: The name of the folder will be the name that you execute from the <code>psh</code> command. 
