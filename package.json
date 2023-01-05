@@ -36,9 +36,8 @@
 		"yargs": "^17.6.2"
 	},
 	"keywords": [
-		"package.json",
-		"package-scripts",
-		"extended-scripts",
+		"bash",
+		"sh",
 		"scripts",
 		"npm",
 		"cli",
