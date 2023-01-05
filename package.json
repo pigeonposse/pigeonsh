@@ -1,0 +1,66 @@
+{
+	"name": "@pigeon-posse/pigeonsh",
+	"version": "0.1.0",
+	"description": "Centralize your server scripts in a single folder and run them using a command",
+	"main": "src/index.js",
+	"bin": {
+		"pigeonsh": "src/index.js",
+		"psh": "src/index.js"
+	},
+	"type": "module",
+	"scripts": {
+		"scripts": "pnpm pes"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.20.5",
+		"@babel/eslint-parser": "^7.19.1",
+		"@babel/preset-env": "^7.20.2",
+		"@pigeon-posse/eslint-config": "^1.0.1",
+		"@pigeon-posse/pkg-extended-scripts": "^0.2.0",
+		"babel-jest": "^29.3.1",
+		"esbuild": "^0.16.12",
+		"eslint": ">= 8",
+		"eslint-plugin-align-assignments": ">= 1",
+		"eslint-plugin-align-import": "^1.0.0",
+		"eslint-plugin-html": "^7.1.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsdoc": "^39.3.6",
+		"eslint-plugin-json": "^3.1.0",
+		"eslint-plugin-promise": ">= 6",
+		"jest": "^29.3.1",
+		"pkg": "^5.8.0"
+	},
+	"dependencies": {
+		"chalk": "^5.0.1",
+		"js-yaml": "^4.1.0",
+		"yargs": "^17.6.2"
+	},
+	"keywords": [
+		"package.json",
+		"package-scripts",
+		"extended-scripts",
+		"scripts",
+		"npm",
+		"cli",
+		"pkg",
+		"pigeonposse"
+	],
+	"author": {
+		"name": "Angelo",
+		"email": "angelo@pigeonposse.com",
+		"url": "https://pigeonposse.com"
+	},
+	"license": {
+		"type": "GPL-3.0",
+		"url": "https://github.com/pigeon-posse/pigeonsh/LICENSE"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://pigeonposse.com/?popup=donate"
+	},
+	"homepage": "https://pigeonposse.com/",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pigeon-posse/pigeonsh"
+	}
+}
