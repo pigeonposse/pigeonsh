@@ -1,6 +1,6 @@
 {
 	"name": "@pigeon-posse/pigeonsh",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "Centralize your server scripts in a single folder and run them using a command",
 	"main": "src/index.js",
 	"bin": {

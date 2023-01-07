@@ -10,7 +10,8 @@ import { getObjectFile } from '../utils/getObjectFile.js'
 
 export const dataObj = () => {
 
-	const pkg = getObjectFile( 'package.json' )
+	const path = new URL('../../package.json', import.meta.url)
+	const pkg = getObjectFile( path.pathname )
 
 	return {
 		cli     : Object.keys( pkg.bin )[0],
