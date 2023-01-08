@@ -49,7 +49,7 @@ Centralize your server scripts in a single folder and run them using the ```psh`
 Can be used with ```.sh```, ```.js```, and ```.py``` files
 
 <details>
-<summary>📌 Index</summary>
+<summary>Index</summary>
 
 1. [Installation](#-installation) 
 2. [Usage](#-usage)
@@ -76,22 +76,28 @@ npm install -g @pigeon-posse/pigeonsh
 ### ☢️ With a executable
 
 <details>
-<summary>ℹ️ View details</summary><br>
+<summary>View details</summary><br>
 
 > :warning: __Not recommended__. If you install it this way, the executable will be heavier.
 
 #### Fast mode
 
-##### ```macos``` and ```linux```:
+##### ```macos```:
 
 ```bash
 git clone https://github.com/pigeon-posse/pigeonsh.git pigeonsh && cp pigeonsh/dist/pigeonsh-macos /usr/local/bin/psh && psh hello
 ```
 
+##### ```linux```:
+
+```bash
+git clone https://github.com/pigeon-posse/pigeonsh.git pigeonsh && cp pigeonsh/dist/pigeonsh-linux /usr/local/bin/psh && psh hello
+```
+
 ##### ```Windows```:
 
 ```bash
-git clone https://github.com/pigeon-posse/pigeonsh.git pigeonsh && copy pigeonsh/dist/pigeonsh-macos /usr/local/bin/psh && psh hello
+git clone https://github.com/pigeon-posse/pigeonsh.git pigeonsh && copy pigeonsh/dist/pigeonsh-win.exe /usr/local/bin/psh && psh hello
 ```
 
 ##### ✅ Success installation
@@ -121,7 +127,7 @@ You can write your scripts in your ```${USER}/.scriptsrc``` folder. The structur
 ```
 
 <details>
-<summary>ℹ️ View details.</summary>
+<summary>View details.</summary>
 
 <br>
 <li> 
