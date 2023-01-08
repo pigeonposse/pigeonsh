@@ -76,11 +76,11 @@ npm install -g @pigeon-posse/pigeonsh
 ### ☢️ With a executable
 
 <details>
-<summary>View details</summary><br>
+<summary>View details</summary>
 
 > :warning: __Not recommended__. If you install it this way, the executable will be heavier.
 
-Supported on _Linux_, _MacOs_ and _Windows_
+Supported on __Linux__, __MacOs__ and __Windows__.
 
 #### Fast mode
 
