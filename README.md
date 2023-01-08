@@ -52,7 +52,7 @@ Can be used with ```.sh```, ```.js```, and ```.py``` files
 <summary>Index</summary>
 
 1. [Installation](#-installation) 
-2. [Usage](#-usage)
+2. [Usage](#%EF%B8%8F-usage)
 	- [Write scripts](#write-scripts)
 	- [Execute scripts](#execute-scripts)
 		- [list](#-psh-list)
