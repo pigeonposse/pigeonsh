@@ -46,7 +46,7 @@ FOR PIGEONPOSSE.COM
 ## 🗒 Description
 
 Centralize your server scripts in a single folder and run them using the ```psh``` or ```pigeonsh``` command.
-Can be used with ```.sh```, ```.js```, and ```.py``` files
+Can be used with ```.sh```, ```.js```, and ```.py``` files.
 
 <details>
 <summary>Index</summary>
