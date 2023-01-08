@@ -80,6 +80,8 @@ npm install -g @pigeon-posse/pigeonsh
 
 > :warning: __Not recommended__. If you install it this way, the executable will be heavier.
 
+Supported on _Linux_, _MacOs_ and _Windows_
+
 #### Fast mode
 
 ##### ```macos```:
@@ -94,11 +96,11 @@ git clone https://github.com/pigeon-posse/pigeonsh.git pigeonsh && cp pigeonsh/d
 git clone https://github.com/pigeon-posse/pigeonsh.git pigeonsh && cp pigeonsh/dist/pigeonsh-linux /usr/local/bin/psh && psh hello
 ```
 
-##### ```Windows```:
+<!-- ##### ```Windows```:
 
 ```bash
 git clone https://github.com/pigeon-posse/pigeonsh.git pigeonsh && copy pigeonsh/dist/pigeonsh-win.exe /usr/local/bin/psh && psh hello
-```
+``` -->
 
 ##### ✅ Success installation
 If the installation has been executed correctly you should see at the end of your line a:
