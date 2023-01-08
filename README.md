@@ -236,7 +236,7 @@ Returns <b><code>hello</code> script info:</b>
 
 ## 👨‍💻 Development
 
-You can contribute via **_Github_**
+You can contribute via **_Github_**.
 
 [![Issues](https://img.shields.io/badge/Issues-grey?style=flat-square)](https://github.com/pigeon-posse/pigeonsh/issues)
 [![Pull requests](https://img.shields.io/badge/Pulls-grey?style=flat-square)](https://github.com/pigeon-posse/pigeonsh/pulls)
@@ -251,7 +251,7 @@ Help us to develop more interesting things.
 
 ## 📜 License
 
-This sofware is licensed with GPLv3 (GNU GENERAL PUBLIC LICENSE Version 3)
+This sofware is licensed with GPLv3 (GNU GENERAL PUBLIC LICENSE Version 3).
 
 [![Read more](https://img.shields.io/badge/Read-more-grey?style=flat-square)](https://github.com/pigeon-posse/pigeonsh/blob/main/LICENSE)
 
