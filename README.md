@@ -48,6 +48,23 @@ FOR PIGEONPOSSE.COM
 Centralize your server scripts in a single folder and run them using the ```psh``` or ```pigeonsh``` command.
 Can be used with ```.sh```, ```.js```, and ```.py``` files
 
+<details>
+<summary>📌 Index</summary>
+
+1. [Installation](#-installation) 
+2. [Usage](#-usage)
+	- [Write scripts](#write-scripts)
+	- [Execute scripts](#execute-scripts)
+		- [list](#-psh-list)
+		- [[script-name] or exec [script-name]](#-psh-script-name-or-psh-exec-script-name)
+		- [info [script-name]](#-psh-info-script-name)
+3. [Development](#-development)
+4. [Donate](#-donate)
+5. [License](#-license)
+6. [About us](#-about-us)
+
+</details>
+
 ## 🔑 Installation
 
 ### ⚡️ Using NPM
@@ -56,10 +73,39 @@ Can be used with ```.sh```, ```.js```, and ```.py``` files
 npm install -g @pigeon-posse/pigeonsh
 ```
 
-### ☢️ With the executable _(not recommended)_
+### ☢️ With a executable
+
+<details>
+<summary>ℹ️ View details</summary><br>
+
+> :warning: __Not recommended__. If you install it this way, the executable will be heavier.
+
+#### Fast mode
+
+##### ```macos``` and ```linux```:
+
+```bash
+git clone https://github.com/pigeon-posse/pigeonsh.git pigeonsh && cp pigeonsh/dist/pigeonsh-macos /usr/local/bin/psh && psh hello
+```
+
+##### ```Windows```:
+
+```bash
+git clone https://github.com/pigeon-posse/pigeonsh.git pigeonsh && copy pigeonsh/dist/pigeonsh-macos /usr/local/bin/psh && psh hello
+```
+
+##### ✅ Success installation
+If the installation has been executed correctly you should see at the end of your line a:
+
+```Hello Pigeon 🐦🌈```
+
+
+#### Manual mode
 
 1. Clone the repository and go to the dist folder.
-2. Copy the executable corresponding to your operating system in your ```bin``` folder
+2. Copy the executable corresponding to your operating system in your ```bin``` folder. 
+
+</details>
 
 ## ⚙️ Usage
 
@@ -70,81 +116,117 @@ You can write your scripts in your ```${USER}/.scriptsrc``` folder. The structur
 ```bash
 - ${USER}/.scriptsrc
 	- 📂 [script-name] 
-		- 📝 main.[sh, js, py]
+		- 📄 main.[sh, js, py]
 		- 📜 info.[yml, yaml, json] # not required
 ```
 
-<details><summary>ℹ️ Explanation</summary>
+<details>
+<summary>ℹ️ View details.</summary>
 
 <br>
 <li> 
-	<code>[script-name]</code>: The name of the folder will be the name that you execute from the <code>psh</code> command. 
+📂 <code>[script-name]</code>:<br> The name of the folder will be the name that you execute from the <code>psh</code> command. 
 Folder name must not contain spaces.
 </li>
 <br>
 
 <li> 
-	<code>main.[sh, js, py]</code>: The main file is the file that will be executed, here you will write your code. It could be <code>.sh</code>, <code>.js</code>, <code>.py</code>. <b>main.sh</b> example:
+📄 <code>main.[sh, js, py]</code>:<br> The main file is the file that will be executed, here you will write your code. It could be <code>.sh</code>, <code>.js</code>, <code>.py</code>. <b>main.sh</b> example:<br><br>
 
-	```bash
-	#!/bin/sh
+```bash
+#!/bin/sh
 
-	echo "Hello Pigeon 🐦🌈"
-	```
+echo "Hello Pigeon 🐦🌈"
+```
+
 </li>
 <br>
 
 <li> 
-	<code>info.[yml, yaml, json]</code>: Not required. In this file you will add the information of your scripts. <b>info.yml</b> example:
+📜 <code>info.[yml, yaml, json]</code>:<br> Not required. In this file you will add the information of your scripts. <b>info.yml</b> example:<br><br>
 
-	```yaml
-	description: Print hello message.
-	version: 1.0.0
-	```
+```yaml
+description: Print hello message.
+version: 1.0.0
+```
+
 </li>
 <br>
+
 </details>
 
 ### Execute scripts
 
-####  ``` psh list```
+#### 🚀 ```psh list```
 Running this command lists all the scripts saved in your ```${user}/.scriptsrc``` folder.
-For example in a clean installation, show the default scripts:
+
+<details>
+<summary>Example</summary>
+
+Run:
 
 ```bash
-$ psh list
+psh list
+```
 
-# return the default scripts
+Returns <b>list of scripts like:</b>
+
+```bash
 hello
 aliasrc
 hosts 
 ```
 
-####  ```psh [script-name]``` or ```psh exec [script-name]```
+</details>
+
+#### 🚀 ```psh [script-name]``` or ```psh exec [script-name]```
+
 Running this command will run the scripts with the same name if they exist. 
-For example, if we want to execute the default script ```hello```:
+
+<details>
+<summary>Example</summary>
+
+Run:
+
+```bash 
+psh hello
+```
+or
+```bash
+psh exec hello
+```
+
+Returns <b><code>hello</code> script:</b>
 
 ```bash
-$ psh hello
-# or
-$ psh exec hello
-
-# return the hello script
 Hello Pigeon 🐦🌈
 ```
 
-####  ```psh info [script-name]```
+</details>
+
+#### 🚀 ```psh info [script-name]```
+
 Running this command will display info of script.
 
-```bash
-$ psh info hello
+<details>
+<summary>Example</summary>
 
-# return the script info.
+Run:
+
+```bash
+psh info hello
+```
+
+Returns <b><code>hello</code> script info:</b>
+
+```bash
 {
 	"description": "Print hello message",
 	"version": "1.0.0"
 }
 ```
+
+</details>
 
 ## 👨‍💻 Development
 

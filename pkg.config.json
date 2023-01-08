@@ -1,0 +1,16 @@
+{
+    "bin" : "dist/build/bundle.cjs",
+    "name": "pigeonsh",
+    "pkg": {
+        "assets": [
+            "package.json"
+        ],
+        "outputPath": "dist",
+        "compress" : "Gzip",
+        "targets" : [
+            "node18-linux-x64",
+            "node18-macos-x64", 
+            "node18-win-x64"
+        ]
+    }
+}

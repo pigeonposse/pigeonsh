@@ -127,10 +127,6 @@
 					}
 				]
             }
-        },
-        {
-        	"files": ["./src/index.js", "./src/getFile.js"],
-        	"parser": "@babel/eslint-parser"
         }
     ]
 }
