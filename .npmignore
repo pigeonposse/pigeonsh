@@ -4,7 +4,9 @@ dist/pigeonsh-linux
 dist/pigeonsh-macos
 dist/pigeonsh-win.exe
 src
-*.config.json
+*.config.*
+*.test.*
+.eslintrc.*
 
 # Logs
 logs

@@ -6,10 +6,10 @@
  *
  */
 
-import * as os   from 'os'
-import * as path from 'path' 
-import { not }   from '../utils/notifications.js'
-import { text }  from '../utils/text.js'
+import * as os        from 'os'
+import { not }        from '../utils/notifications.js'
+import { text }       from '../utils/text.js'
+import { getPkgPath } from '../utils/dirs.js'
 
 export class Cli {
 
@@ -42,7 +42,7 @@ export class Cli {
 	
 		this.args               = args
 		this.scriptsPath        = os.homedir() + '/.scriptsrc'
-		this.defaultsPath       = path.resolve( 'src/data' )
+		this.defaultsPath       = getPkgPath( 'src/data' )
 		this.defaultScriptsPath = this.scriptsPath + '/defaults'
 		this.utils              = {
 			not  : not,

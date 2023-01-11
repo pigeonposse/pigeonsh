@@ -53,7 +53,7 @@ export class Info extends Cmd {
 			this.utils.text.info( `[${parameter}] Info:` ) + this.utils.text.blankLine,
 		)
 		
-    	console.log( data )
+		console.log( data )
 	
 	}
 

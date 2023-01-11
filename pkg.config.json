@@ -3,7 +3,8 @@
     "name": "pigeonsh",
     "pkg": {
         "assets": [
-            "package.json"
+            "package.json",
+            "src/data"
         ],
         "outputPath": "dist",
         "compress" : "Gzip",

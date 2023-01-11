@@ -17,6 +17,17 @@ export const dirExists = ( source ) => {
 
 }
 
+export const getPkgPath = ( src ) => {
+	
+	let path, res
+	
+	path = new URL( '../../', import.meta.url )
+	res  = path.pathname + src
+
+	return res
+
+}
+
 export const getDirNames = ( source ) => {
 
 	return fs.readdirSync( source, { withFileTypes: true } )

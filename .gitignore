@@ -1,5 +1,9 @@
 # Projects
 
+# locks
+pnpm-lock.*
+npm-lock.*
+
 # Logs
 logs
 *.log

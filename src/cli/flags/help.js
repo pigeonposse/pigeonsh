@@ -44,7 +44,7 @@ export class Help extends Version {
 		desc += this.utils.text.blankLine
 		desc += this.utils.text.blankLine
 		desc += '  » ' + this.utils.text.info( 'More info: ' )
-		desc += this.utils.text.infoLink( 'https://github.com/pigeon-posse/pigeonsh' )
+		desc += this.utils.text.infoLink( 'https://github.com/pigeon-posse/pigeonsh#README.md' )
 		desc += this.utils.text.blankLine
 
 		return this.#txtStyle( title, desc )
@@ -91,10 +91,10 @@ export class Help extends Version {
 		title = 'Usage'
 		data  = {
 			'Commands' : {
-				'<script-name>'      : 'Run the script with the same name.',
-				'exec <script-name>' : 'Run the script with the same name.',
-				'[ list | l ]'       : 'Displays a list of available script names.',
-				'[ info | i ]'       : 'Show script information.',
+				'<script-name>'              : 'Run the script with the same name.',
+				'exec <script-name>'         : 'Run the script with the same name.',
+				'[ info | i ] <script-name>' : 'Show script information.',
+				'[ list | l ]'               : 'Displays a list of available script names.',
 			},
 			'Flags' : {
 				'[ -h | --help ]'    : 'Returns cli infomation.',

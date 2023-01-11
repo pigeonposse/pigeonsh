@@ -37,17 +37,17 @@ const setBlankLine = ( ) => {
  * Export the constant with all styles.
  */
 export const text = {
-	dim       : ( txt ) => textStyle( 'dim', txt ),
-	standard  : ( txt ) => textStyle( 'white', txt ),
-	info      : ( txt ) => textStyle( 'gray', txt ),
-	error     : ( txt ) => textStyle( 'red', txt ),
-	warn      : ( txt ) => textStyle( 'yellow', txt ),
-	success   : ( txt ) => textStyle( 'green', txt ),
-	group     : ( txt ) => textStyle( 'cyan', txt ),
-	title     : ( txt ) => textStyle( 'cyan', txt ),
-	titleDim  : ( txt ) => textStyles( 'cyan', 'dim', txt ),
+	dim      : ( txt ) => textStyle( 'dim', txt ),
+	standard : ( txt ) => textStyle( 'white', txt ),
+	info     : ( txt ) => textStyle( 'gray', txt ),
+	error    : ( txt ) => textStyle( 'red', txt ),
+	warn     : ( txt ) => textStyle( 'yellow', txt ),
+	success  : ( txt ) => textStyle( 'green', txt ),
+	group    : ( txt ) => textStyle( 'cyan', txt ),
+	title    : ( txt ) => textStyle( 'cyan', txt ),
+	titleDim : ( txt ) => textStyles( 'cyan', 'dim', txt ),
 	infoLink
-  : ( txt ) => textStyles( 'gray', 'underline', txt ),
+	: ( txt ) => textStyles( 'gray', 'underline', txt ),
 	infoBg    : ( txt ) => textStyles( 'black', 'bgGray', txt ),
 	errorBg   : ( txt ) => textStyles( 'whiteBright', 'bgRed', txt ),
 	successBg : ( txt ) => textStyles( 'whiteBright', 'bgGreen', txt ),
