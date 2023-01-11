@@ -9,7 +9,7 @@
 import esbuild from 'esbuild'
 import babel   from 'esbuild-plugin-babel'
 
-const build = {
+const buildCommon = {
 	entryPoints : [ 'src/index.js' ],
 	bundle      : true,
 	minify      : true,
@@ -20,7 +20,20 @@ const build = {
 	],
 	format : 'cjs',
 }
+	
+const buildEsm = {
+	entryPoints : [ 'src/index.js' ],
+	bundle      : true,
+	minify      : true,
+	platform    : 'node',
+	outfile     : 'dist/build/bundle.js',
+	format      : 'esm',
+}
     
 esbuild
-	.build( build )
+	.build( buildCommon )
+	.catch( () => process.exit( 1 ) )
+
+esbuild
+	.build( buildEsm )
 	.catch( () => process.exit( 1 ) )

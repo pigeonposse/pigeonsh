@@ -18,19 +18,43 @@ export class Info extends Cmd {
         
 	}
 
+	#errNoParam( prop ){
+
+		let res 
+		res  = `Property [${prop}] needs a parameter.`
+		res += this.utils.text.blankLine
+		res += 'Allowed parameters: ' + this.scriptNames.join( ', ' )
+
+		return this.utils.not.error( res )
+	
+	}
+
+	#errNoExistParam( param ){
+
+		return this.utils.not.error( 
+			`Script [${param}] does not exist.`, 
+		)
+	
+	}
+
 	run(){
 
-		let nameList, cmd, parameter
+		let cmd, parameter, data
 
-		nameList  = this.getScriptsListKey( 'name' )
 		cmd       = this.args['args']
 		parameter = cmd[1]
 
-		if( !parameter ) return this.utils.not.error( `Property [${cmd[0]}] needs a parameter` )
-		if ( !nameList.includes( parameter ) ) return this.utils.not.error( `Script [${parameter}] does not exist.` )
-        
-		console.log( this.getScript( parameter )['info']['data'] )
-    
+		if( !parameter ) return this.#errNoParam( cmd[0] )
+		if( !this.scriptNames.includes( parameter ) ) return this.#errNoExistParam( parameter )
+
+		data = this.getScriptDataByName( parameter )['info']['data']
+		
+		console.log( 
+			this.utils.text.info( `[${parameter}] Info:` ) + this.utils.text.blankLine,
+		)
+		
+    	console.log( data )
+	
 	}
 
 }

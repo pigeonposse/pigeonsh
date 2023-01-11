@@ -6,18 +6,17 @@
  *
  */
 
-import { getObjectFile } from '../utils/getObjectFile.js'
+import { getPkgObject } from '../utils/getObjectFile.js'
 
 export const dataObj = () => {
 
-	const path = new URL('../../package.json', import.meta.url)
-	const pkg = getObjectFile( path.pathname )
-
+	let pkg = getPkgObject()
+	
 	return {
-		cli     : Object.keys( pkg.bin )[0],
-		cmds    : [ 'list', 'info', 'exec' ],
-		version : pkg.version,
-		args    : process.argv.slice( 2 ),
+		cli      : Object.keys( pkg.bin )[0],
+		aliasCli : Object.keys( pkg.bin )[1],
+		version  : pkg.version,
+		args     : process.argv.slice( 2 ),
 	} 
 
 } 

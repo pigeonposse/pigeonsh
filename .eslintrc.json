@@ -6,6 +6,7 @@
 	    "jest": true
 	},
 	"parserOptions" : {
+		"ecmaVersion": 13,
 		"sourceType": "module",
 		"allowImportExportEverywhere": true
 	},
@@ -114,7 +115,7 @@
 			}
 		]
 	},
-	"ignorePatterns": [ "dist/*.js"],
+	"ignorePatterns": [ "dist/*", "dist/build/*" ],
     "overrides": [
         {
             "files": ["*.json"],

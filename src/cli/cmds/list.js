@@ -14,7 +14,7 @@ export class List extends Cmd {
 
 		super( args )
 		this.cmds    = [ 'list' ]
-    	this.aliases = [ 'l' ]
+		this.aliases = [ 'l' ]
         
 	}
 
@@ -22,9 +22,9 @@ export class List extends Cmd {
 
 		let list
 
-		list = this.getScriptsListKey( 'name' )
+		list = this.scriptNames.join( '\n' )
 
-		console.log( list.join( '\n' ) ) 
+		console.log( list ) 
 	
 	}
 

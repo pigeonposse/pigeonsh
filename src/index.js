@@ -9,8 +9,4 @@
 
 import { cli } from './cli/main.js'
 
-( async () => {
-
-	cli() 
-
-} )()
+( async () => cli() )()

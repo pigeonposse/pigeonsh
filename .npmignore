@@ -1,3 +1,11 @@
+# project
+node_modules
+dist/pigeonsh-linux
+dist/pigeonsh-macos
+dist/pigeonsh-win.exe
+src
+*.config.json
+
 # Logs
 logs
 *.log
@@ -7,10 +15,6 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-build
 *.local
 
 # Editor directories and files

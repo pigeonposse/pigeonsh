@@ -14,18 +14,24 @@ export class ScriptName extends Cmd {
 	constructor( args ) {
 
 		super( args )
-		this.cmds    = this.getScriptsListKey( 'name' )
+		this.cmds    = this.scriptNames
 		this.aliases = [ ]
         
 	}
 	
+	#errNoExistCMD( cmd ){
+
+		return this.utils.not.error( `Script [${cmd}] does not exist` )
+	
+	}
+
 	execCmd( cmd, params ){
 
 		let cli, data
 		
-		data = this.getScript( cmd )
+		data = this.getScriptDataByName( cmd )
 
-		if( !data || data === undefined ) return this.utils.not.error( `Script [${cmd}] does not exist` )
+		if( !data ) return this.#errNoExistCMD( cmd )
 
 		cli = `${data.cli} ${data.mainPath} ${params.join( ' ' )}`
         

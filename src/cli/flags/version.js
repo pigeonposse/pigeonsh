@@ -17,17 +17,20 @@ export class Version extends Cli {
         
 	}
 
-	getVersion(){
+	#versionTxt(){
+		
+		let res 
 
-		return this.utils.not.standard(  
-			`${this.args.cli}@${this.args.version}`,
-		)
+		res  = this.utils.text.standard( 'Version ' )
+		res += this.utils.text.infoBg( ` ${this.args.version} ` )
+		
+		return this.utils.not.standard( res )
 
 	}
 
 	run(){
 
-		return this.getVersion()
+		return this.#versionTxt()
 
 	}
 

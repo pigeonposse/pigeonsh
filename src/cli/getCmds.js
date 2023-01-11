@@ -23,7 +23,7 @@ export class Cmds {
 
 	}
 
-	getType( types, arg ) {
+	#getType( types, arg ) {
 
 		let res 
 
@@ -33,12 +33,12 @@ export class Cmds {
         
 		types.forEach( value => {
 
-			let c = new value( this.args )
-        
-			if ( c.cmds.includes( arg ) || c.aliases.includes( arg ) ) {
+			let klass = new value( this.args )
+			
+			if ( klass.cmds.includes( arg ) || klass.aliases.includes( arg ) ) {
 
 				res.exists = true 
-				res.funct  = c.run()
+				res.funct  = klass.run()
             
 			}
         
@@ -50,13 +50,13 @@ export class Cmds {
 
 	getOpts( arg ) {
 
-		return this.getType( this.opts, arg )
+		return this.#getType( this.opts, arg )
 	
 	}
 
 	getFlags( arg ){
 
-		return this.getType( this.flags, arg )
+		return this.#getType( this.flags, arg )
 	
 	}
 

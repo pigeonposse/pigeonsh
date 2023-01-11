@@ -35,3 +35,14 @@ export const getObjectFile = ( file ) => {
 	return res
 
 }
+
+export const getPkgObject = ( ) => {
+
+	let path, pkg
+
+	path = new URL( '../../package.json', import.meta.url )
+	pkg  = getObjectFile( path.pathname )
+
+	return pkg
+	
+}

@@ -46,6 +46,8 @@ export const text = {
 	group     : ( txt ) => textStyle( 'cyan', txt ),
 	title     : ( txt ) => textStyle( 'cyan', txt ),
 	titleDim  : ( txt ) => textStyles( 'cyan', 'dim', txt ),
+	infoLink
+  : ( txt ) => textStyles( 'gray', 'underline', txt ),
 	infoBg    : ( txt ) => textStyles( 'black', 'bgGray', txt ),
 	errorBg   : ( txt ) => textStyles( 'whiteBright', 'bgRed', txt ),
 	successBg : ( txt ) => textStyles( 'whiteBright', 'bgGreen', txt ),

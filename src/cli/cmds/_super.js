@@ -6,7 +6,9 @@
  *
  */
 
-import { CmdList } from './super/list.js'
+import { CmdInit } from './super/_init.js'
 
-export class Cmd extends CmdList { }
+export class Cmd extends CmdInit {
+
+}
 
