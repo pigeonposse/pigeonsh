@@ -42,7 +42,7 @@ export class Cli {
 	
 		this.args               = args
 		this.scriptsPath        = os.homedir() + '/.scriptsrc'
-		this.defaultsPath       = getPkgPath( 'src/data' )
+		this.defaultsPath       = getPkgPath( 'data' )
 		this.defaultScriptsPath = this.scriptsPath + '/defaults'
 		this.utils              = {
 			not  : not,
