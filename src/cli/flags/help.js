@@ -132,7 +132,7 @@ export class Help extends Version {
 
 		let res, cliName, version
 		
-		cliName = this.args.currCli
+		cliName = this.args.cli
 
 		version = this.args.version
 
