@@ -124,7 +124,7 @@ You can write your scripts in your ```${USER}/.scriptsrc``` folder. The structur
 ```bash
 - ${USER}/.scriptsrc
 	- 📂 [script-name] 
-		- 📄 main.[sh, js, py]
+		- 📄 main.[sh, zsh, js, py]
 		- 📜 info.[yml, yaml, json] # not required
 ```
 
