@@ -1,8 +1,8 @@
 # Projects
 
 # locks
-pnpm-lock.*
-npm-lock.*
+pnpm-lock.yaml
+npm-lock.json
 
 # Logs
 logs
