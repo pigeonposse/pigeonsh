@@ -41,12 +41,12 @@ FOR PIGEONPOSSE.COM
 [![About us](https://img.shields.io/badge/About-us-grey?style=flat-square)](https://pigeonposse.com/?popup=about) 
 [![Donate](https://img.shields.io/badge/Donate-pink?style=flat-square)](https://pigeonposse.com/?popup=donate) 
 
-> :warning: **This package is still in _beta_ version**. It can be installed and used but things may change in the future.
+> :warning: **_Beta_ version**. It can be installed and used but things may change in the future.
 
 ## 🗒 Description
 
 Centralize your server scripts in a single folder and run them using the ```psh``` or ```pigeonsh``` command.
-Can be used with ```.sh```, ```.js```, and ```.py``` files.
+Can be used with ```.sh```, ```.zsh```, ```.js```, and ```.py``` files.
 
 <details>
 <summary>Index</summary>
