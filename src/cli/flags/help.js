@@ -40,14 +40,17 @@ export class Help extends Version {
 		let title, desc 
 
 		title = 'Description'
-		desc  = 'Cmd [' + cliName + '] is used to unify the shell scripts in a single point and list or execute them.'
+		desc  = 'Cmd [ ' + cliName + ' ] '
+		desc += 'is used to execute, list or show the information of the scripts that are in folder ~/.scriptsrc.'
+		desc += this.utils.text.blankLine + this.utils.text.blankLine
+		desc += 'if the folder ~/.scriptsrc does not exist will be automatically created with a "default" subfolder that stores the default scripts.'
+		desc += this.utils.text.blankLine + this.utils.text.blankLine
+		desc += 'To create your own scripts you can do it by following the guide at:'
 		desc += this.utils.text.blankLine
-		desc += this.utils.text.blankLine
-		desc += '  » ' + this.utils.text.info( 'More info: ' )
-		desc += this.utils.text.infoLink( 'https://github.com/pigeon-posse/pigeonsh#README.md' )
-		desc += this.utils.text.blankLine
+		desc += this.utils.text.infoLink( 'https://github.com/pigeon-posse/pigeonsh' )
+		//desc += this.utils.text.blankLine
 
-		return this.#txtStyle( title, desc )
+		return this.#groupStyle( title, desc )
 
 	}
 	
@@ -88,20 +91,20 @@ export class Help extends Version {
 
 		let title, desc, data
 
-		title = 'Usage'
+		title = 'CLI usage'
 		data  = {
 			'Commands' : {
-				'<script-name>'              : 'Run the script with the same name.',
-				'exec <script-name>'         : 'Run the script with the same name.',
-				'[ info | i ] <script-name>' : 'Show script information.',
-				'[ list | l ]'               : 'Displays a list of available script names.',
+				'<script-name>'              : 'Run the script named <script-name>.',
+				'exec <script-name>'         : 'Run the script named <script-name>.',
+				'[ info | i ] <script-name>' : 'Show the information of the script named <script-name>.',
+				'[ list | l ]'               : 'Show a list of available script names.',
 			},
 			'Flags' : {
-				'[ -h | --help ]'    : 'Returns cli infomation.',
-				'[ -v | --version ]' : 'Returns cli version.',
+				'[ -h | --help ]'    : 'Show CLI information.',
+				'[ -v | --version ]' : 'Show CLI version.',
 			},
 		}
-		
+
 		desc = this.#usageDescTxt( data, cliName )
 
 		return this.#groupStyle( title, desc )
@@ -129,7 +132,8 @@ export class Help extends Version {
 
 		let res, cliName, version
 		
-		cliName = this.args.cli
+		cliName = this.args.currCli
+
 		version = this.args.version
 
 		res  = this.#infoTxt( cliName )

@@ -119,10 +119,10 @@ If the installation has been executed correctly you should see at the end of you
 
 ### Write scripts
 
-You can write your scripts in your ```${USER}/.scriptsrc``` folder. The structure for the script to work must be:
+You can write your scripts in your ```~/.scriptsrc``` folder. The structure for the script to work must be:
 
 ```bash
-- ${USER}/.scriptsrc
+- ~/.scriptsrc
 	- 📂 [script-name] 
 		- 📄 main.[sh, zsh, js, py]
 		- 📜 info.[yml, yaml, json] # not required
@@ -166,7 +166,7 @@ version: 1.0.0
 ### Execute scripts
 
 #### 🚀 ```psh list```
-Running this command lists all the scripts saved in your ```${user}/.scriptsrc``` folder.
+Running this command lists all the scripts saved in your ```~/.scriptsrc``` folder.
 
 <details>
 <summary>Example</summary>

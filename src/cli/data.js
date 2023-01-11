@@ -15,6 +15,7 @@ export const dataObj = () => {
 	return {
 		cli      : Object.keys( pkg.bin )[0],
 		aliasCli : Object.keys( pkg.bin )[1],
+		currCli  : process.argv[1],
 		version  : pkg.version,
 		args     : process.argv.slice( 2 ),
 	} 
