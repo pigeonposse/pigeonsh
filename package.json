@@ -1,6 +1,6 @@
 {
 	"name": "@pigeon-posse/pigeonsh",
-	"version": "0.8.3",
+	"version": "0.8.4",
 	"description": "Centralize your server scripts in a single folder and run them using a command",
 	"main": "dist/build/bundle.cjs",
 	"module": "dist/build/bundle.js",

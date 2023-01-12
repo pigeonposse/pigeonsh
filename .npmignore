@@ -4,6 +4,7 @@ dist/pigeonsh-linux
 dist/pigeonsh-macos
 dist/pigeonsh-win.exe
 src
+docs
 *.config.*
 *.test.*
 .eslintrc.*
