@@ -33,13 +33,15 @@ FOR PIGEONPOSSE.COM
 
 -->
 
-# PIGEONSH by PIGEONPOSSE™
+![HEADER PIGEONSH](docs/header.png)
 
 [![License](https://img.shields.io/github/license/pigeon-posse/pigeonsh?color=blue&label=License&style=flat-square)](https://npmjs.com/package/@pigeon-posse/pigeonsh)
 [![Version](https://img.shields.io/npm/v/@pigeon-posse/pigeonsh?color=a1b858&label&style=flat-square)](https://npmjs.com/package/@pigeon-posse/pigeonsh)
 [![Web](https://img.shields.io/badge/Web-grey?style=flat-square)](https://pigeonposse.com/) 
 [![About us](https://img.shields.io/badge/About-us-grey?style=flat-square)](https://pigeonposse.com/?popup=about) 
 [![Donate](https://img.shields.io/badge/Donate-pink?style=flat-square)](https://pigeonposse.com/?popup=donate) 
+
+# PIGEONSH by _PIGEONPOSSE™_
 
 > :warning: **_Beta_ version**. It can be installed and used but things may change in the future.
 
