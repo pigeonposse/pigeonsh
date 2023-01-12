@@ -53,17 +53,18 @@ Can be used with ```.sh```, ```.zsh```, ```.js```, and ```.py``` files.
 <details>
 <summary>Index</summary>
 
-1. [Installation](#-installation) 
-2. [Usage](#%EF%B8%8F-usage)
+1. [Description](#-description) 
+2. [Installation](#-installation) 
+3. [Usage](#%EF%B8%8F-usage)
 	- [Write scripts](#write-scripts)
 	- [Execute scripts](#execute-scripts)
 		- [list](#-psh-list)
 		- [[script-name] or exec [script-name]](#-psh-script-name-or-psh-exec-script-name)
 		- [info [script-name]](#-psh-info-script-name)
-3. [Development](#-development)
-4. [Donate](#-donate)
-5. [License](#-license)
-6. [About us](#-about-us)
+4. [Development](#-development)
+5. [Donate](#-donate)
+6. [License](#-license)
+7. [About us](#-about-us)
 
 </details>
 
