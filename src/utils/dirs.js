@@ -6,12 +6,15 @@
  *
  */
 
-import * as fs   from 'fs'
-import * as path from 'path'
+import { compwin } from './compWin.js'
+import * as fs     from 'fs'
+import * as path   from 'path'
 
-export const dirExists = ( source ) => {
+export const dirExists = ( src ) => {
 
-	if ( fs.existsSync( source ) ) return true
+	src = compwin( src )  
+
+	if ( fs.existsSync( src ) ) return true
 
 	return false
 
@@ -28,15 +31,19 @@ export const getPkgPath = ( src ) => {
 
 }
 
-export const getDirNames = ( source ) => {
+export const getDirNames = ( src ) => {
 
-	return fs.readdirSync( source, { withFileTypes: true } )
+	src = compwin( src ) 
+ 
+	return fs.readdirSync( src, { withFileTypes: true } )
 		.filter( dirent => dirent.isDirectory() )
 		.map( dirent => dirent.name )
 
 }
 
 export const addDir = ( dir ) => {
+
+	dir = compwin( dir )  
 
 	if ( !fs.existsSync( dir ) ){
 
@@ -49,6 +56,9 @@ export const addDir = ( dir ) => {
 export const copyDir = ( src, dest ) => {
 
 	let exists, stats, isDirectory
+
+	src  = compwin( src )  
+	dest = compwin( dest )  
 
 	exists      = fs.existsSync( src )
 	stats       = exists && fs.statSync( src )

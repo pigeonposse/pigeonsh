@@ -38,9 +38,9 @@ export const cli = () => {
 	let curCMDarg
 
 	curCMDarg = data.args[0]
-
-	if ( !curCMDarg ) return not.error( 'command need a argument.' )
-
+	
+	if ( !curCMDarg ) data.args = 'list'
+	
 	runCli()
 
 }

@@ -6,9 +6,9 @@
  * @description File that runs the app.
  */
 
-import { Add }    from './src/add.js'
-import { Remove } from './src/remove.js'
-import { List }   from './src/list.js'
+// import { Add } from './src/add.js'
+// import { Remove } from './src/remove.js'
+// import { List }   from './src/list.js'
 
 ( function() {
 

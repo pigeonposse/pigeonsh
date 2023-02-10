@@ -4,7 +4,9 @@
  * @description Function to return the object of a file.
  *
  */
+
 import * as fs        from 'fs'
+import { compwin }    from './compWin.js'
 import { isObject }   from './object.js'
 import yaml           from 'js-yaml'
 import { not }        from './notifications.js'
@@ -13,6 +15,8 @@ import { getPkgPath } from './dirs.js'
 export const getObjectFile = ( file ) => {
 
 	let res
+
+	file = compwin( file ) 
 
 	res = fs.readFileSync( 
 		file,

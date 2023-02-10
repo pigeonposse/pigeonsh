@@ -102,11 +102,11 @@ git clone https://github.com/pigeon-posse/pigeonsh.git pigeonsh && cp pigeonsh/d
 git clone https://github.com/pigeon-posse/pigeonsh.git pigeonsh && cp pigeonsh/dist/pigeonsh-linux /usr/local/bin/psh && psh hello
 ```
 
-<!-- ##### ```Windows```:
+##### ```Windows``` (no tested):
 
-```bash
-git clone https://github.com/pigeon-posse/pigeonsh.git pigeonsh && copy pigeonsh/dist/pigeonsh-win.exe /usr/local/bin/psh && psh hello
-``` -->
+```cmd
+git clone https://github.com/pigeon-posse/pigeonsh.git pigeonsh && copy pigeonsh/dist/pigeonsh-win.exe C: \Program Files (x86)\Git \us\ local bin\psh && psh hello
+```
 
 ##### ✅ Success installation
 If the installation has been executed correctly you should see at the end of your line a:
@@ -274,6 +274,7 @@ _PigeonPosse_ is a ✨ **code development collective** ✨ focused on creating p
 |                                                                                    | Name        | Role         | GitHub                                         |
 | ---------------------------------------------------------------------------------- | ----------- | ------------ | ---------------------------------------------- |
 | <img src="https://github.com/AngelEspejo.png?size=72" style="border-radius:100%"/> | AngelEspejo | Author       | [@AngelEspejo](https://github.com/AngelEspejo) |
+| <img src="https://github.com/irfaelo.png?size=72" style="border-radius:100%"/> 	 | Irfaelo      | Windows compatibility       | [@irfaelo](https://github.com/irfaelo) |
 | <img src="https://github.com/PigeonPosse.png?size=72" style="border-radius:100%"/> | PigeonPosse | Collective	  | [@PigeonPosse](https://github.com/PigeonPosse) |
 
 
