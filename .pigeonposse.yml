@@ -1,0 +1,18 @@
+###############################################################################
+# FOR PIGEONPOSSE USAGE
+###############################################################################
+
+web:
+  
+  - id: "{{package.name}}"
+    name: Pigeon SH
+    type: cli
+    version: "{{package.version}}"
+    description: "{{package.description}}"
+    homepage: "{{package.homepage}}"
+    repo: "https://github.com/pigeonposse/{{package.name}}"
+    logo: "https://raw.githubusercontent.com/pigeonposse/{{package.name}}/main/docs/logo.png"
+    banner: "https://raw.githubusercontent.com/pigeonposse/{{package.name}}/main/docs/banner.png"
+    status: "coming-soon"
+
+###############################################################################
