@@ -13,6 +13,5 @@ web:
     repo: "https://github.com/pigeonposse/{{package.name}}"
     logo: "https://raw.githubusercontent.com/pigeonposse/{{package.name}}/main/docs/logo.png"
     banner: "https://raw.githubusercontent.com/pigeonposse/{{package.name}}/main/docs/header.png"
-    status: "coming-soon"
 
 ###############################################################################
