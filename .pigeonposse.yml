@@ -11,7 +11,7 @@ web:
     description: "{{package.description}}"
     homepage: "{{package.homepage}}"
     repo: "https://github.com/pigeonposse/{{package.name}}"
-    logo: "https://raw.githubusercontent.com/pigeonposse/{{package.name}}/main/docs/logo.png"
+    logo: "https://raw.githubusercontent.com/pigeonposse/pigeonsh/main/docs/logo.png"
     banner: "https://raw.githubusercontent.com/pigeonposse/{{package.name}}/main/docs/header.png"
 
 ###############################################################################
