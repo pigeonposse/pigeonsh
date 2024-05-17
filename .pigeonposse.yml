@@ -6,7 +6,10 @@ web:
   
   - id: "{{package.name}}"
     name: Pigeon SH
-    type: cli
+    type: 
+      - cli
+      - bin
+      - libary
     version: "{{package.version}}"
     description: "{{package.description}}"
     homepage: "{{package.homepage}}"
