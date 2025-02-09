@@ -3,18 +3,16 @@
 ###############################################################################
 
 web:
-  
-  - id: "{{package.name}}"
-    name: Pigeon SH
-    type: 
+  pigeonSH:
+    name: "Pigeon SH"
+    type:
       - cli
       - bin
-      - libary
-    version: "{{package.version}}"
-    description: "{{package.description}}"
-    homepage: "{{package.homepage}}"
-    repo: "https://github.com/pigeonposse/{{package.name}}"
+      - library
+    status: "active"
+    version: "0.9.1"
+    homepage: https://www.npmjs.com/package/@pigeon-posse/pigeonsh
+    desc: "Centralize your server scripts in a single folder and run them using a command"
     logo: "https://raw.githubusercontent.com/pigeonposse/pigeonsh/main/docs/logo.png"
-    banner: "https://raw.githubusercontent.com/pigeonposse/{{package.name}}/main/docs/header.png"
-
+    banner: "https://raw.githubusercontent.com/pigeonposse/pigeonsh/main/docs/header.png"
 ###############################################################################
